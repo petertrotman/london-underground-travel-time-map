@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>London Underground Travel Time Interactive Map</title>
+        <link href="underground.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        
+        <div id="underground-map">
+            <h1 id="underground-map-title">Interactive London Underground Travel Time Map</h1>
+            <label id="toggle-time-distortion-checkbox-label"><input type="checkbox" id="toggle-time-distortion" onclick="toggleTimeDistortion()" checked> Enable time distortion</input></label>
+            <label id="toggle-route-highlighting-checkbox-label"><input type="checkbox" id="toggle-route-highlighting" onclick="toggleRouteHighlighting()" checked> Enable route highlighting</input></label>
+            <div id='data-table-div'>
+                <label id="data-table-textbox-label"><input type="search" id="data-table-textbox" placeholder="Search"></input></label>
+                <table id="data-table">
+                    <thead>
+                        <th id="th-station-name"><a href="#">Station</a></th>
+                        <th id="th-travel-time"><a href="#">Travel Time</a></th>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <div id='information-div'>
+                <p>Click on a station on the table, or double click on a station on the map to select it. Zoom using the mouse wheel or click and drag on the map to pan around. The table is sortable by clicking on the headers, and searchable using the search box. Finally, you can mouse over the legend to see each line highlighted. This probably does not work very well on a phone or tablet...</p>
+                <p>The Time-Distorted view pushes stations away from the selected station based on the travel time to get there. Each subsequent concentric ring of the time-distorted view is an additional 5 minutes travel time. The stations are initially shown at their geographical locations. Lines simply connect stations together, and do not necessarily follow their geographical route.</p>
+                <p>Use the reset button and toggle-switches in the top left.</p>
+                <p>Some of my favourites: Any of the end stations; Dollis Hill (no one likes that section of the Jubilee line, apparently); West Ruislip (Watch what it does to the Piccaddilly line); Similarly Harrow & Wealdston, the most unexpectedly lonely point on the map; Trying to get from Park Royal to Hanger Lane (~2 mins walking; 25 mins tube!); Anywhere on the Piccadilly line west of Green Park to North of Finsbury Park - it says you're better off switching to the Victoria line, I think this might be true!</p>
+                <p>Map inspired by the Java applet by Tom Carden (http://www.tom-carden.co.uk/p5/tube_map_travel_times/applet/). Journey times may not be representative for several reasons, not least of which is that it only considers the Tube as an option - for entertainment (not informational) purposes only!</p>
+            </div>
+        </div>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="data.js" type="text/javascript"></script>
+        <script src="main.js" type="text/javascript"></script>
+        <script>
+            console.log(data);
+        </script>
+    </body>
+</html>
