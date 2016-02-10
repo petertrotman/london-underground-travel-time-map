@@ -150,10 +150,10 @@ input#data-table-textbox {
 }
 
 table#data-table td {
-    font: 16px sans-serif;
+    font: 12px sans-serif;
     border: 0px;
     break-word: word-wrap;
-    padding: 8px;
+    padding: 4px;
     border: 0px;
 }
 
@@ -168,7 +168,7 @@ tr.active a {
 
 th {
     text-align: left;
-    font: 16px sans-serif;
+    font: 12px sans-serif;
     font-weight: bold;
     color: black;
 }
@@ -189,7 +189,7 @@ h1#underground-map-title {
     width: 40%;
     left: 30%;
     text-align: center;
-    font: 24px "Trebuchet MS", sans-serif;
+    font: 16px "Trebuchet MS", sans-serif;
     font-weight: bold;
     color: steelblue;
 }
@@ -216,4 +216,8 @@ text.legend-label {
 
 line.legend-line {
     pointer-events: all;
+}
+
+#reset-button, .button-text {
+    cursor: pointer;
 }
