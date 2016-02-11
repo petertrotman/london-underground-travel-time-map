@@ -221,3 +221,29 @@ line.legend-line {
 #reset-button, .button-text {
     cursor: pointer;
 }
+
+@media (max-width: 800px) {
+    h1#underground-map-title {
+        display: none;
+    }
+
+    table#data-table {
+        display: none;
+    }
+
+    g#legend-group {
+        display: none;
+    }
+
+    input#data-table-textbox {
+        display: none;
+    }
+
+    label#toggle-time-distortion-checkbox-label {
+        display: none;
+    }
+
+    label#toggle-route-highlighting-checkbox-label {
+        display: none;
+    }
+}
