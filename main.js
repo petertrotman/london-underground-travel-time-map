@@ -159,7 +159,7 @@ resetButton = resetButtonGroup.append('rect')
 
 resetButtonGroup.append('text')
     .attr('x', 60)
-    .attr('y', 30)
+    .attr('y', 35)
     .text('Reset')
     .attr('class', 'button-text')
     .attr('id', 'reset-button-text');
