@@ -1,7 +1,7 @@
 // <----- INIT VARIABLES ----->
 var width = d3.select("#underground-map").node().getBoundingClientRect().width,// || 1000,
     //height = width * 10 / 16;
-    height = d3.select("#underground-map").node().getBoundingClientRect().height || width * 10 / 16;
+    height = d3.select("#underground-map").node().getBoundingClientRect().height || width * (width > 800 ? 0.45 : 0.625);
 
 var svg = d3.select("#underground-map").append('svg')
     .attr('width', width)
