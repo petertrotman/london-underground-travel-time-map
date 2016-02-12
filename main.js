@@ -115,7 +115,7 @@ drawVoronoi();
 // <----- ZOOM BEHAVIOUR ----->
 
 var zoomBehavior = d3.behavior.zoom()
-    .scaleExtent([0.5, 8.0])
+    .scaleExtent([0.25, 8.0])
     .on('zoom', zoom);
 
 var currentScale = 1; // To properly initialise font sizes

@@ -203,6 +203,10 @@ div#information-div {
     color:gray;
 }
 
+div#information-div p {
+    margin: 0;
+}
+
 div#underground-map {
     width: 100%;
     height: 100%;
